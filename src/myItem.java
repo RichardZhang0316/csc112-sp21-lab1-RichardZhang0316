@@ -1,7 +1,7 @@
 // simple class to hold an item an its price
 //
-// Your name
-// Date
+// Richard Zhang
+// Feb 2ed 2021
 
 public class myItem {
 
@@ -9,6 +9,31 @@ public class myItem {
     private String itemName;
     private double itemPrice;
 
+    public myItem(){
+    itemName="none";
+    itemPrice=0.0;
+    }
+
+    public myItem(String name, double price){
+        itemPrice=price;
+        itemName=name;
+    }
+
+    public void setItemPrice(double price){
+        itemPrice=price;
+    }
+
+    public void setItemName(String name){
+        itemName=name;
+    }
+
+    public String getItemName(){
+        return itemName;
+    }
+
+    public double getItemPrice(){
+        return itemPrice;
+    }
 
     // Override Object methods:  toString() and equals(Object)
     //
