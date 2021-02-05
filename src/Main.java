@@ -40,7 +40,7 @@ public class Main {
         Store.add(item4);
         Store.add(item5);
         Store.add(item6);
-        Store.add(new myItem("water bottol",10.0));
+        Store.add(new myItem("water bottle",10.0));
         Store.add(new myItem("calculus textbook",100.0));
         Store.add(new myItem("cookie",2.0));
         Store.add(new myItem("facial mask",5.0));
@@ -50,7 +50,8 @@ public class Main {
             try {
                 //System.out.print("args[" + i + "]" + args[i]+" ");
                 subtotal += Store.get(Integer.parseInt(args[i]) - 1).getItemPrice();
-                System.out.println(Store.get(Integer.parseInt(args[i]) - 1).toString());
+                //System.out.println(Store.get(Integer.parseInt(args[i]) - 1).toString());
+                System.out.printf("%-15s    %6.2f%n", Store.get(Integer.parseInt(args[i]) - 1).getItemName(), Store.get(Integer.parseInt(args[i]) - 1).getItemPrice());
             } catch (NumberFormatException e) {
                 System.out.println("illegal input <" + args[i] + ">");
             } catch (IndexOutOfBoundsException e) {
